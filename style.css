@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+  background-color: #efeef1;
+}
+
+.color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+}
+
+.color-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.current-color {
+  height: 100px;
+  width: 100px;
+  background: rgb(0, 0, 0);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.history {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  text-align: left;
+  height: 200px;
+}
+
+.history-wrapper {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.favorite-color {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: #f1f1f1;
+  cursor: copy;
+}
+
+.display-code {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.inputs input {
+  width: 80px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.save-color {
+  background-color: rgb(201, 38, 38);
+  color: rgb(247, 241, 241);
+}
+
+.save-color:hover {
+  background-color: rgb(230, 42, 42);
+}
+
+.history h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.color-history {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.color-history li {
+  background-color: #f1f1f1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.alert-user {
+  position: absolute;
+  right: 0;
+  top: -25px;
+}

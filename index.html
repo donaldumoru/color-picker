@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <div class="color-container">
+      <div class="history">
+        <h3>Last 5 Random Colors</h3>
+        <li class="color-history"></li>
+        <li class="color-history"></li>
+        <li class="color-history"></li>
+        <li class="color-history"></li>
+        <li class="color-history"></li>
+      </div>
+
+      <div class="color-wrapper">
+        <div class="current-color"></div>
+
+        <div class="display-code">
+          <p class="code">rgb(0, 0, 0)</p>
+        </div>
+
+        <div class="buttons">
+          <button class="new-color">Get Color</button>
+          <button class="copy-code">Copy Code</button>
+          <button class="save-color">Favorite</button>
+
+          <p class="alert-user"></p>
+        </div>
+
+        <div class="inputs">
+          <input
+            type="number"
+            id="red"
+            class="user-colors"
+            placeholder="R (0-255)"
+            min="0"
+            max="255"
+            value="0"
+          />
+          <input
+            type="number"
+            id="green"
+            class="user-colors"
+            placeholder="G (0-255)"
+            min="0"
+            max="255"
+            value="0"
+          />
+          <input
+            type="number"
+            id="blue"
+            class="user-colors"
+            placeholder="B (0-255)"
+            min="0"
+            max="255"
+            value="0"
+          />
+        </div>
+
+        <div class="show-hex">
+          <p class="display-hex-value">HEX Code: #00000</p>
+        </div>
+      </div>
+
+      <div class="history-wrapper">
+        <div class="favorite-color"></div>
+        <div class="favorite-color"></div>
+        <div class="favorite-color"></div>
+        <div class="favorite-color"></div>
+        <div class="favorite-color"></div>
+        <div class="favorite-color"></div>
+      </div>
+    </div>
+  </body>
+</html>
